@@ -22,7 +22,7 @@
   
   <link rel="stylesheet" href="css/main.css">
   <title>Contribute to Snopes.com</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" async crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" defer crossorigin="anonymous"></script>
 </head>
 <body class="antialiased">
 
@@ -368,7 +368,7 @@
 
 <script>
   
-  $( document ).ready(function() {
+  document.addEventListener('DOMContentLoaded', function(){
 
     function open() {
         $(this).closest("dt").next("dd").removeClass("hidden");
